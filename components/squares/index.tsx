@@ -6,9 +6,10 @@ interface Props {
 }
 
 export const Square : React.FC<Props> = (props: Props) => {
-    const square = props.selected ?  <Player /> : ''
+    
+    const playerOnSquare = props.selected ?  <Player /> : ''  
 
     return  <SquareBoard selected = {props.selected}>{
-        square
+        playerOnSquare
     } </SquareBoard>
 }

@@ -9,7 +9,9 @@ export const SquareBoard = styled.div<Props>`
     color:  ${props => props.selected ? "#a47bd1" : "#6a24b7"};
     font-size: 1em;
     margin: 1em;
-    padding: 0.25em 1em;
+    padding: 5em 1em;
     border: 2px solid palevioletred;
     border-radius: 3px;
+    display: flex;
+    flex-direction: column-reverse;
 `
