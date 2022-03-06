@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Role = styled.span`
+export const PlayerPawn = styled.span`
     background: rgb(0, 0, 255);
     color:  blue;
     font-size: 1em;

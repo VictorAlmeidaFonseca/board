@@ -1,3 +1,5 @@
+import { PlayerPawn } from './styles'
+
 export const Player = () => {
-    return <span> ♘ </span> 
+    return <PlayerPawn> ♘ </PlayerPawn>  
 }

@@ -2,6 +2,8 @@ import styled from 'styled-components'
 
 interface Props {
     src : string
+    rigth: boolean
+    left: boolean
 }
 
 export const StartStyle = styled.div`
@@ -22,3 +24,14 @@ export const Avatar = styled.img<Props>`
     height: 70;
     border-radius: 50%
 `
+
+export const Arrows = styled.button<Props>`
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px; 
+    transform: ${props => props.rigth ? `rotate(-45deg)` : `rotate(-135deg)` };
+    -webkit-transform:   ${props => props.rigth ? `rotate(-45deg)` : `rotate(135deg)` }
+`
+
+
